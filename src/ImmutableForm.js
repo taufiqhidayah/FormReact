@@ -17,7 +17,7 @@ const ImmutableForm = props => {
   return (
     <form onSubmit={handleSubmit}>
       <Field
-        name="username"
+        name="Nama User"
         type="text"
         component={renderField}
         label="Username"
