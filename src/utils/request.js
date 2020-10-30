@@ -10,12 +10,8 @@ export default (
 ) => {
   let config = {
     method,
-    baseURL: BASE_API,
     url,
   };
-  if (customConfig !== null) {
-    config = Object.assign(config, customConfig);
-  }
   if (token !== null) {
     config = Object.assign(config, { headers: { ...config.headers, Authorization: `Bearer ${token}` } });
   }
